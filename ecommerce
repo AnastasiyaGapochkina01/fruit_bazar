@@ -4,6 +4,9 @@ server {
         index index.html index.php;
         server_name ecom.local;
 
+        access_log /var/log/nginx/ecom_access.log;
+        error_log /var/log/nginx/ecom_error.log;
+
         location / {
                 try_files $uri $uri/ =404;
         }

@@ -1,5 +1,9 @@
 # Fruit bazar
-First create a database name ecommerce in your database. Than import ecommerce.sql file in your ecommerce database.
+1. Склонировать репозиторий
+```
+git clone git@github.com:creativesaiful/Ecommerce-project-with-php-and-mysqli-Fruits-Bazar-.git ecommerce
+```
+2. Создать базу данных, настроить пользователя с правами, залить дамп
 
 ```
 $ sudo mysql
@@ -11,12 +15,20 @@ $ sudo mysql
 > exit
 $ sudo mysql ecommerce < ecommerce.sql
 ```
-2
+3. Настроить nginx
+```
+$ sudo cp ecommerce /etc/nginx/sites-enabled/ecommerce
+$ sudo ln -s /etc/nginx/sites-available/ecommerce /etc/nginx/sites-enabled
+$ nginx -t
+$ nginx -s reload
+```
+4. Преднастроенные (дефолтные) учетные записи
+```
 admin access:
 saifulislamsapon@gmail.com
 pass:1234
 
-
 user access:
 saifulislamsapon@gmail.com
 123
+```

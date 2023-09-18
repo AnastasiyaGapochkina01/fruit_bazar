@@ -1,7 +1,7 @@
 # Fruit bazar
 1. Склонировать репозиторий
 ```
-git clone git@github.com:creativesaiful/Ecommerce-project-with-php-and-mysqli-Fruits-Bazar-.git ecommerce
+git clone git@github.com:AnastasiyaGapochkina01/fruit_bazar.git ecommerce
 ```
 2. Создать базу данных, настроить пользователя с правами, залить дамп
 
